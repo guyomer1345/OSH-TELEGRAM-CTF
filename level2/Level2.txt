@@ -1,0 +1,1 @@
+Hide flag in telegram group desc

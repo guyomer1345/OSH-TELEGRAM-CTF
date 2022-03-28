@@ -40,7 +40,7 @@ def main(flag):
 
 if __name__ == "__main__":
     try:
-        flag = ' '.join(sys.argv[1:])
+        flag = sys.argv[1] # Doesn't work with spaces!!
         main(flag)
     except IndexError:
         logging.error('Please enter flag to append to image')

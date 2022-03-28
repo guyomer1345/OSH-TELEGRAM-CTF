@@ -60,7 +60,7 @@ def main(link: str):
 
 if __name__ == "__main__":
     try:
-        link = ' '.join(sys.argv[1:])
+        link = sys.argv[1] # Doesn't work with spaces!!
         main(link)
     except IndexError:
         logging.error('Please enter link to encode')

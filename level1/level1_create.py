@@ -28,7 +28,7 @@ def main(text):
 
 if __name__ == "__main__":
     try:
-        text = ' '.join(sys.argv[1:])
+        text = sys.argv[1] # Doesn't work with spaces!!
         main(text)
     except IndexError:
         logging.error('Please enter text to encode')
