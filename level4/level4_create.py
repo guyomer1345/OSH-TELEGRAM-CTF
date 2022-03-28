@@ -6,9 +6,9 @@ import sys
 logging.basicConfig(level=logging.INFO)
 
 FLAG_FILE = './Level4.png'
-FOLDER_AMOUNT = 3
+FOLDER_AMOUNT = 20
 ROOT = "./Level4/"
-PATH = ROOT + '/'.join([str(randint(0, FOLDER_AMOUNT-1)) for x in range(FOLDER_AMOUNT)])
+PATH = ROOT + '/'.join([str(randint(0, FOLDER_AMOUNT-1)) for x in range(3)])
 
 
 def create_flag_file(flag: str) -> None:
@@ -22,7 +22,7 @@ def create_flag_file(flag: str) -> None:
 
 
 def create_dir(path:str , d: int):
-    print("creating folder ", path)
+    #print("creating folder ", path)
     os.system("md {}".format(path))
     if d <= 3:
         for i in range(FOLDER_AMOUNT):
